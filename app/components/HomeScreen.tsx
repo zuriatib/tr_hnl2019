@@ -1,5 +1,6 @@
+import {Container, Text} from 'native-base';
 import React from "react";
-import {StyleSheet, Text, View} from "react-native";
+import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
     container: {
@@ -10,8 +11,8 @@ const styles = StyleSheet.create({
     },
 });
 
-const HomeScreen: React.FC = () => <View style={styles.container}>
+const HomeScreen: React.FC = () => <Container style={styles.container}>
     <Text>Open up App.tsx to start working on your app!</Text>
-</View>;
+</Container>;
 
 export {HomeScreen}
