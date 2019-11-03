@@ -1,5 +1,7 @@
 import {NavigationNativeContainer} from "@react-navigation/native"
 import {createStackNavigator} from "@react-navigation/stack";
+import {EmergencyScreen} from "./components/EmergencyScreen";
+import {InformationScreen} from "./components/InformationScreen";
 import {AppLoading} from "expo";
 import * as Font from 'expo-font';
 import React, {useEffect, useState} from 'react';
@@ -25,8 +27,10 @@ export default function App() {
     return (
         <NavigationNativeContainer>
             <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={HomeScreen} options={{title: "Home"}}/>
-                <Stack.Screen name="Question" component={QuestionScreen} options={{title: "Questionnaire"}}/>
+                <Stack.Screen name="Home" component={HomeScreen} options={{title: "Spark Freedom"}}/>
+                <Stack.Screen name="Question" component={QuestionScreen} options={{title: "Assessment"}}/>
+                <Stack.Screen name="Information" component={InformationScreen} options={{title: "Information"}}/>
+                <Stack.Screen name="Emergency" component={EmergencyScreen} options={{title: "Emergency", headerTintColor: 'red'}}/>
             </Stack.Navigator>
         </NavigationNativeContainer>
     );
