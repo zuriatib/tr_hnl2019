@@ -4,3 +4,6 @@ The template for Hack'n'Lead 2019. Please fork into your own space and add membe
 
 [Try the App](https://expo.io/@lukasluecke/hnl19-tr-human-traficking)
 ![QR-Code](./expo-qr-code.png)
+
+[App Source (React Native with platform dependent UI)](https://github.com/zuriatib/tr_hnl2019/tree/app)
+[Scoring Algorithm / Classification (Python)](https://github.com/zuriatib/tr_hnl2019/tree/zuriati)
