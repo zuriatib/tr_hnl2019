@@ -4,6 +4,7 @@ import {AppLoading} from "expo";
 import * as Font from 'expo-font';
 import React, {useEffect, useState} from 'react';
 import {HomeScreen} from "./components/HomeScreen";
+import {QuestionScreen} from "./components/QuestionScreen";
 
 const Stack = createStackNavigator();
 
@@ -25,6 +26,7 @@ export default function App() {
         <NavigationNativeContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={HomeScreen} options={{title: "Home"}}/>
+                <Stack.Screen name="Question" component={QuestionScreen} options={{title: "Questionnaire"}}/>
             </Stack.Navigator>
         </NavigationNativeContainer>
     );
